@@ -1,0 +1,28 @@
+/* home.css */
+
+.home-container {
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .home-container img {
+    width: 200px;
+    height: auto; 
+    transition: transform 0.3s ease-in-out;
+  } 
+  
+  .home-container img:hover {
+    transform: scale(1.3);
+  }
+  
+  .home-content {
+    /* Estilos para el contenido a la derecha de la imagen */
+    margin-left: 20px; /* Espacio entre la imagen y el contenido */
+    padding: 20px; /* Espaciado interno del contenido */
+    font-size: 18px;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
