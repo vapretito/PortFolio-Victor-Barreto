@@ -26,3 +26,20 @@
     transition: font-size 0.3s ease-in-out;
   }
   
+  /* home.css */
+
+/* Estilos para el botón de traducción */
+.translate-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .translate-button:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el mouse */
+  }
+  
