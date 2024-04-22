@@ -5,7 +5,7 @@ import Proyectos from '../Proyectos/proyectos';
 function Content() {
   return (
     <div className="cards-container">
-      <h1> Proyectos: </h1>
+      <h1> Proyectos </h1>
       <Proyectos />
     
       {/* Agrega más componentes Proyectos según sea necesario */}

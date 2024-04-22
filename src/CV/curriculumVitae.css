@@ -1,0 +1,56 @@
+/* curriculumVitae.css */
+
+.cv-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.144); /* Fondo oscuro para contraste */
+    color: #ffffff;
+    text-align: left; /* Alineación hacia la izquierda */
+  }
+  
+  .cv-columns {
+    display: flex;
+    gap: 20px; /* Espacio entre columnas */
+    text-align: left; /* Alineación hacia la izquierda */
+  }
+  
+  .cv-column {
+    flex: 1; /* Cada columna toma el mismo ancho */
+    text-align: left; /* Alineación hacia la izquierda */
+  }
+  
+  .cv-section {
+    border: 1px solid #67013a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    text-align: left; /* Alineación hacia la izquierda */
+    transition: all 0.3s ease; /* Transición para un efecto suave */
+  }
+  
+  .cv-section:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro en hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra en hover */
+    transform: translateY(-5px); /* Elevación sutil al hacer hover */
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  h1, h2 {
+    color: white;
+    text-align: left; /* Alineación hacia la izquierda */
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left; /* Alineación hacia la izquierda */
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 5px 0;
+    text-align: left; /* Alineación hacia la izquierda */
+  }
+  

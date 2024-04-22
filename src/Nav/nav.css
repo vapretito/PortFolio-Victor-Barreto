@@ -1,26 +1,45 @@
 /* nav.css */
 .nav-container {
-    width: 10%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #ffffff00; /* Puedes ajustar el color de fondo según tus preferencias */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto visual */
-  }
-  
-  .nav-container img {
-    width: 50px; /* Ajusta el ancho según tus necesidades */
-    height: auto;
-    margin: 0 10px; /* Ajusta el margen según tu diseño */
-    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al efecto */
-  }
-  
-  /* Estilo al pasar el cursor sobre las imágenes */
-  .nav-container img:hover {
-    transform: scale(1.2); /* Cambia el tamaño de la imagen al hacer hover */
-  }
-  
+  width: 100%; /* Ampliamos el ancho para adaptarse a las pestañas */
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Espaciado entre elementos */
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffffb4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Asegura que la barra esté siempre encima */
+}
+
+.nav-container img {
+  width: 50px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-container img:hover {
+  transform: scale(1.2);
+}
+
+.nav-container a, /* Estilo para los enlaces externos */
+.nav-container a:hover,
+.nav-container a:visited {
+  text-decoration: none; /* Sin subrayado */
+  color: black; /* Color del texto */
+}
+
+.nav-container a:hover {
+  color: darkgray; /* Cambia el color al pasar el cursor */
+}
+
+.nav-container .nav-link {
+  padding: 5px 10px; /* Espaciado para las pestañas */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+.nav-container .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el cursor */
+}

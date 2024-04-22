@@ -1,8 +1,21 @@
 /* content.css */
+/* content.css */
+
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se distribuyan en filas */
+  justify-content: flex-start; /* Alinea las tarjetas al comienzo */
+  align-items: flex-start; /* Alinea las tarjetas en la parte superior */
+  padding: 20px; /* Espacio interno del contenedor */
+  color: white; /* Color del texto para el título */
+}
+
+.cards-container h1 {
+  width: 100%; /* Asegura que el título ocupe toda la fila */
+  text-align: left; /* Centra el título */
+  padding-bottom: 20px; /* Espacio debajo del título */
+}
+
   
-     
+  
+  
