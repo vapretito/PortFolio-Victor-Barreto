@@ -80,7 +80,7 @@
 
 @media (max-width: 600px) {
   .home-container {
-    width: 85vw;  /* Aumenta el ancho para pantallas pequeñas */
+    width: 90vw;  /* Aumenta el ancho para pantallas pequeñas */
     height: 60vh; /* Aumenta la altura para pantallas pequeñas */
     margin: auto; /* Centra el contenedor en la pantalla */
 
