@@ -1,0 +1,67 @@
+/* Configuración para centrar el contenedor de contacto en el centro de la pantalla */
+.contacto-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pantalla completa */
+  }
+  
+  /* Contenedor principal para la sección de contacto */
+  .contacto-container {
+    padding: 20px;
+    background-color: rgba(6, 7, 8, 0.733);
+    box-shadow: 0 2px 10px #018dff;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    max-width: 300px; /* Tamaño máximo */
+  }
+  
+  /* Estilo para el encabezado de contacto */
+  .contacto-container h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor para los botones de redes sociales */
+  .contacto-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px; /* Espacio antes del correo electrónico */
+  }
+  
+  /* Estilo para los íconos de contacto */
+  .contacto-icono {
+    width: 50px; 
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contacto-icono:hover {
+    transform: scale(1.2); /* Aumentar tamaño al hacer hover */
+  }
+  
+  /* Estilo para el correo electrónico con icono */
+  .contacto-email {
+    display: flex; /* Para alinear el icono y el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    gap: 10px; /* Espacio entre el icono y el texto */
+    font-size: 18px;
+    font-family: "Courier New", monospace; /* Estilo máquina de escribir */
+  }
+  
+  /* Estilo para el texto del correo electrónico */
+  .correo-texto {
+    margin: 0; /* Quitar el margen por defecto del <p> */
+  }
+
+  .correo-icono {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  .correo-icono:hover {
+    transform: scale(1.2); /* Aumentar tamaño al hacer hover */
+  }

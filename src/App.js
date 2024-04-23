@@ -5,6 +5,7 @@ import Home from './Home/home';
 import Content from './Content/content';
 import CurriculumVitae from './CV/curriculumVitae';
 import Me from './Me/me';
+import Contacto from './Contacto/contacto';
 
 function WithNav() {
   const { pathname } = useLocation(); // Ahora debería estar bien definido
@@ -19,6 +20,8 @@ function WithNav() {
         <Route path="/proyectos" element={<Content />} /> {/* Sección de proyectos */}
         <Route path="/cv" element={<CurriculumVitae />} /> {/* Sección de CV */}
         {/* Puedes agregar más rutas según sea necesario */}
+        <Route path="/contacto" element={<Contacto />} /> {/* Sección de CV */}
+
       </Routes>
     </>
   );
