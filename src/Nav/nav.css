@@ -1,45 +1,65 @@
-/* nav.css */
 .nav-container {
-  width: 100%; /* Ampliamos el ancho para adaptarse a las pestañas */
-  position: fixed;
-  top: 0;
-  right: 0;
   display: flex;
-  justify-content: space-between; /* Espaciado entre elementos */
+  justify-content: space-between; /* Espacio entre elementos principales */
   align-items: center;
-  padding: 10px;
-  background-color: #ffffffb4;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 100; /* Asegura que la barra esté siempre encima */
+  padding: 10px 20px; /* Espaciado alrededor del navbar */
+  background-color: rgba(6, 7, 8, 0.733); /* Fondo semitransparente */
+  box-shadow: 0 2px 10px #018dff; /* Sombra para el navbar */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si es necesario */
 }
 
-.nav-container img {
-  width: 50px;
-  height: auto;
-  margin: 0 10px;
-  transition: transform 0.3s ease-in-out;
+.nav-title {
+  font-size: 24px;
+  text-transform: uppercase; /* Texto en mayúsculas */
 }
 
-.nav-container img:hover {
-  transform: scale(1.2);
+.nav-links {
+  display: flex;
+  gap: 20px; /* Espacio entre enlaces */
 }
 
-.nav-container a, /* Estilo para los enlaces externos */
-.nav-container a:hover,
-.nav-container a:visited {
-  text-decoration: none; /* Sin subrayado */
-  color: black; /* Color del texto */
+.nav-link {
+  text-decoration: none; /* Sin subrayado para el enlace */
+  color: white; /* Color de texto */
+  transition: color 0.3s ease; /* Transición suave para el hover */
 }
 
-.nav-container a:hover {
-  color: darkgray; /* Cambia el color al pasar el cursor */
+.nav-link:hover {
+  color: #e69d01f8; /* Color al hacer hover */
 }
 
-.nav-container .nav-link {
-  padding: 5px 10px; /* Espaciado para las pestañas */
-  font-weight: bold; /* Fuente en negrita */
+.nav-icons {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos */
 }
 
-.nav-container .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el cursor */
+.nav-icon {
+  width: 30px; /* Tamaño de los íconos */
+  height: 30px;
+  transition: transform 0.3s ease; /* Transición suave para hover */
+}
+
+.nav-icon:hover {
+  transform: scale(1.2); /* Aumentar tamaño al hover */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column; /* Cambiar a disposición en columna */
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Alinear los enlaces en columna */
+    gap: 10px; /* Reducir el espacio entre enlaces */
+  }
+
+  .nav-icons {
+    justify-content: center; /* Centrarlos para que no se desorganizen */
+  }
+
+  .nav-title {
+    margin-bottom: 10px; /* Espacio entre título y enlaces */
+  }
 }

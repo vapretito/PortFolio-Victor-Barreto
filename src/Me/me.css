@@ -1,0 +1,59 @@
+.me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: #1e1e1e02; /* Fondo semitransparente */
+    color: white;
+  }
+  
+  .me-content {
+    text-align: center;
+  }
+  
+  .text-box {
+    padding: 20px;
+    background-color: rgba(6, 7, 8, 0.671); /* Fondo semitransparente */
+    box-shadow: 0 2px 20px #018dff;    
+    border: 2px solid #569cd679; /* Borde para el contenedor */
+    border-radius: 10px;
+    
+  }
+  
+  .text-box h1 {
+    font-size: 36px; /* Tamaño del encabezado */
+    font-weight: bold; /* Negrita para el encabezado */
+  }
+  
+  .text-box p {
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify; /* Justificación del texto para mejor lectura */
+  }
+  
+  .translate-button {
+    padding: 10px 20px;
+    background-color: #5b51e7f8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .translate-button:hover {
+    background-color: #ee1d1df8; /* Color más oscuro al hacer hover */
+  }
+  
+  .me-container img {
+    width: 150px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenido */
+    transition: transform 0.3s ease; /* Suave transición para animaciones */
+  }
+  
+  .me-container img:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el cursor */
+  }
+  

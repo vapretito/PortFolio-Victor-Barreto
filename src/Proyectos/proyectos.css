@@ -14,8 +14,9 @@
   width: calc(33.33% - 10px); /* Para mostrar 3 tarjetas por fila */
   margin-bottom: 20px;
   box-sizing: border-box;
-  /* Estilos adicionales para la tarjeta */
-  border: 1px solid #67013a;
+  background-color: rgba(6, 7, 8, 0.671); /* Fondo semitransparente */
+  box-shadow: 0 2px 10px #018dff;
+  border: 1px solid #569cd6;
   padding: 10px;
 }
 

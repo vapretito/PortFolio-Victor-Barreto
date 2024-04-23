@@ -1,34 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
-import yo from '../Home/victor-animado-3d-port.png';
+import linkedin from '../Nav/icono link.png';
+import git from '../Nav/icono git.png';
 
-function Home() {
-  const [language, setLanguage] = useState('es');
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'es' ? 'en' : 'es');
-  };
-
- 
-
+const Home = () => {
   return (
     <div className="home-container">
-      <img src={yo} alt="Logo" /> 
-      <div className="home-content">
-        <div className="text-box">
-          <h1>{language === 'es' ? 'Victor Barreto' : 'Victor Barreto'}</h1>
-          <p>
-            {language === 'es'
-              ? "Soy un Desarrollador Full-Stack con experiencia en servicio al cliente y ventas. Mi pasión por la tecnología me llevó a adquirir habilidades en HTML, CSS, React, JavaScript, NodeJS, Express y Sequelize. Busco combinar mis habilidades en servicio al cliente con la programación para contribuir al éxito de una empresa tecnológica."
-              : "I'm a Full-Stack Developer with experience in customer service and sales. My passion for technology led me to acquire skills in HTML, CSS, React, JavaScript, NodeJS, Express, and Sequelize. I seek to combine my customer service skills with programming to contribute to the success of a tech company."}
-          </p>
-          <button className="translate-button" onClick={toggleLanguage}>
-            {language === 'es' ? 'Traducir a Inglés' : 'Translate to Spanish'}
-          </button>
-        </div>
+      <h1>Victor Barreto</h1>
+      <h2>Desarrollador Full Stack</h2>
+
+      {/* Botones como texto subrayado */}
+      <div className="home-links">
+        <Link to="/" className="home-link">Inicio</Link>
+        <Link to="/sobre-mi" className="home-link">Sobre mí</Link>
+        <Link to="/cv" className="home-link">CV</Link>
+        <Link to="/proyectos" className="home-link">Proyectos</Link>
+        <Link to="/contacto" className="home-link">Contacto</Link>
+      </div>
+
+      {/* Div para iconos de redes sociales */}
+      <div className="home-socials">
+        <a href="https://www.linkedin.com/in/v%C3%ADctor-barreto-486487255/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="LinkedIn" className="social-icon" />
+        </a>
+        <a href="https://github.com/vapretito" target="_blank" rel="noopener noreferrer">
+          <img src={git} alt="GitHub" className="social-icon" />
+        </a>
       </div>
     </div>
   );
-}
+};
 
 export default Home;
+
