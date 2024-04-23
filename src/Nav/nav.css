@@ -1,43 +1,66 @@
 .nav-container {
+  padding: 10px 20px;
+  background-color: rgba(6, 7, 8, 0.733);
+  box-shadow: 0 2px 10px #018dff;
+}
+
+/* Contenedor del título y el botón hamburguesa */
+.nav-header {
   display: flex;
-  justify-content: space-between; /* Espacio entre elementos principales */
+  justify-content: space-between; /* El botón hamburguesa a la derecha */
   align-items: center;
-  padding: 10px 20px; /* Espaciado alrededor del navbar */
-  background-color: rgba(6, 7, 8, 0.733); /* Fondo semitransparente */
-  box-shadow: 0 2px 10px #018dff; /* Sombra para el navbar */
 }
 
-.nav-title {
+/* Mostrar el menú hamburguesa solo en dispositivos móviles */
+.hamburger-menu {
+  display: none; /* Oculto por defecto */
   font-size: 24px;
-  text-transform: uppercase; /* Texto en mayúsculas */
+  background: none;
+  border: none;
+  color: white;
 }
 
+/* Enlaces de la barra de navegación */
 .nav-links {
-  display: flex; 
-  gap: 20px; /* Espacio entre enlaces */
+  display: flex; /* Siempre visibles en pantallas grandes */
+  gap: 20px;
+  transition: max-height 0.3s ease;
+  max-height: none; /* Siempre visibles */
+  overflow: visible;
+}
+
+.nav-links.open {
+  max-height: 200px; /* Menú abierto en dispositivos móviles */
 }
 
 .nav-link {
-  text-decoration: none; /* Sin subrayado para el enlace */
-  color: white; /* Color de texto */
-  transition: color 0.3s ease; /* Transición suave para el hover */
+  text-decoration: none;
+  color: white; /* Color base para los enlaces */
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
   color: #e69d01f8; /* Color al hacer hover */
 }
 
-.nav-icons {
-  display: flex;
-  gap: 15px; /* Espacio entre los íconos */
+.nav-link:visited {
+  color: white; /* Mantener el color tras ser visitado */
 }
 
-.nav-icon {
-  width: 30px; /* Tamaño de los íconos */
-  height: 30px;
-  transition: transform 0.3s ease; /* Transición suave para hover */
-}
+/* Configuración para dispositivos móviles */
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: block; /* Mostrar el botón hamburguesa solo en dispositivos móviles */
+  }
 
-.nav-icon:hover {
-  transform: scale(1.2); /* Aumentar tamaño al hover */
+  .nav-links {
+    flex-direction: column; /* Disposición vertical para enlaces */
+    max-height: 0; /* Cerrado por defecto */
+    overflow: hidden; /* Evitar desbordamiento */
+    gap: 10px;
+  }
+
+  .nav-links.open {
+    max-height: 200px; /* Abrir el menú cuando se hace clic en el botón hamburguesa */
+  }
 }
