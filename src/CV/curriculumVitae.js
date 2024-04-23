@@ -4,7 +4,7 @@ import './curriculumVitae.css';
 const CurriculumVitae = () => {
   return (
     <div className="cv-container">
-      <h1>Victor Barreto</h1>
+      <h2>//Victor Barreto</h2>
       <div className="cv-content">
         {
           // Información de contacto

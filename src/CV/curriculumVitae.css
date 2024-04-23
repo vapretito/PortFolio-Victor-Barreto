@@ -15,6 +15,10 @@
     font-size: 20px; /* Tamaño más pequeño para títulos */
     color: #569cd6; /* Azul para simular resaltado */
   }
+  h2 {
+    font-size: 20px; /* Tamaño más pequeño para títulos */
+    color: #32fd186b; /* Azul para simular resaltado */
+  }
   
   h3 {
     font-size: 18px; /* Tamaño más pequeño para subtítulos */
