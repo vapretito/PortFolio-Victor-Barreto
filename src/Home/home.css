@@ -6,6 +6,8 @@
   height: 90vh;           /* Asegura que ocupa todo el viewport */
   width: 90vw;            /* Ancho completo del viewport */
   overflow: hidden;        /* Evita que haya desplazamientos inesperados */
+  margin: auto; /* Centra el contenedor en la pantalla */
+
 }
 
 /* Cuadro centrado */
