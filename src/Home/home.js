@@ -6,6 +6,7 @@ import git from '../Nav/icono git.png';
 
 const Home = () => {
   return (
+    <div className="fullscreen-container">
     <div className="home-container">
       <h1>Victor Barreto</h1>
       <h2>Desarrollador Full Stack</h2>
@@ -28,6 +29,7 @@ const Home = () => {
           <img src={git} alt="GitHub" className="social-icon" />
         </a>
       </div>
+    </div>
     </div>
   );
 };
