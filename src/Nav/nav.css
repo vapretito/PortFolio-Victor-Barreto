@@ -1,7 +1,59 @@
+@keyframes rain {
+  from {
+    top: -10px; /* Empieza arriba de la barra */
+    opacity: 1; /* Comienza visible */
+  }
+  to {
+    top: 100%; /* Termina abajo de la barra */
+    opacity: 0; /* Se desvanece al llegar al fondo */
+  }
+}
+
 .nav-container {
+  position: relative; /* Necesario para que los puntos se posicionen absolutamente */
   padding: 10px 20px;
   background-color: rgba(6, 7, 8, 0.733);
   box-shadow: 0 2px 10px #018dff;
+}
+
+/* Clase para el efecto de lluvia */
+.rain-point {
+  position: absolute; /* Permite la animación desde la parte superior */
+  width: 4px; /* Tamaño de los puntos */
+  height: 4px;
+  background: rgb(245, 7, 7); /* Color de los puntos */
+  border-radius: 50%; /* Para hacerlos circulares */
+  opacity: 0; /* Inicialmente invisible */
+  animation: rain 3s infinite; /* Duración de la animación y ciclo infinito */
+}
+
+/* Variación para múltiples puntos */
+.rain-point-1 {
+  left: 10%; /* Posición del primer punto */
+  animation-delay: 0.2s; /* Retraso para el efecto aleatorio */
+}
+
+.rain-point-2 {
+  left: 30%; /* Posición del segundo punto */
+  animation-delay: 0.5s; /* Retraso para el efecto aleatorio */
+}
+
+.rain-point-3 {
+  left: 50%; /* Posición del tercer punto */
+  animation-delay: 0.6s; /* Retraso para el efecto aleatorio */
+}
+
+.rain-point-4 {
+  left: 70%; /* Posición del cuarto punto */
+  animation-delay: 0.8s; /* Retraso para el efecto aleatorio */
+}
+.rain-point-5 {
+  left: 85%; /* Posición del cuarto punto */
+  animation-delay: 1.8s; /* Retraso para el efecto aleatorio */
+}
+.rain-point-6 {
+  left: 90%; /* Posición del cuarto punto */
+  animation-delay: 0.8s; /* Retraso para el efecto aleatorio */
 }
 
 /* Contenedor del título y el botón hamburguesa */

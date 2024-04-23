@@ -27,6 +27,14 @@ function Nav() {
         <Link to="/proyectos" className="nav-link">Proyectos</Link>
         <Link to="/contacto" className="nav-link">Contacto</Link>
       </div>
+
+      {/* Añade los puntos para el efecto de lluvia */}
+      <div className="rain-point rain-point-1"></div>
+      <div className="rain-point rain-point-2"></div>
+      <div className="rain-point rain-point-3"></div>
+      <div className="rain-point rain-point-4"></div>
+      <div className="rain-point rain-point-5"></div>
+      <div className="rain-point rain-point-6"></div>
     </div>
   );
 }
