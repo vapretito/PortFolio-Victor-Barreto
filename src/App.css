@@ -6,8 +6,7 @@
   align-items: center; /* Alinea todo el contenido al centro */
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to bottom, #01004e, #000032, #67013a);
-  background-size: cover;
+  
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
