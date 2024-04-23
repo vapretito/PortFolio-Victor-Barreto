@@ -4,12 +4,13 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
+  
 }
 
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("https://i.blogs.es/3c9c3b/curos-programacion-cortos/1366_2000.jpg") top right no-repeat;
+  background: #040404 url("https://wallpapertag.com/wallpaper/full/a/c/5/253173-honeycomb-wallpaper-3013x2000-phone.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
